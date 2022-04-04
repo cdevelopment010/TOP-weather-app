@@ -23,9 +23,9 @@ function updateTemp(input) {
         let t = temp.innerText.split(' ')[0];
 
         if (checked) {
-            temp.innerText = Math.round(((t * (9/5)) + 32) * 10)/10 + ' F';
+            temp.innerHTML = Math.round(((t * (9/5)) + 32) * 10)/10 + ' &#8457;';
         } else {
-            temp.innerText = Math.round(((t  -32)* (5/9)) * 10)/10 + ' C';
+            temp.innerHTML = Math.round(((t  -32)* (5/9)) * 10)/10 + ' &#8451;';
         }
     })
 }

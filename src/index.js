@@ -5,13 +5,5 @@ import createFooter from './footer';
 
 
 createHeader(); 
-retrieveData('Consett, UK'); 
+retrieveData('Durham, UK'); 
 createFooter(); 
-
-// (async function init() {
-//     createHeader(); 
-//     await retrieveData('Consett, UK'); 
-//     createFooter(); 
-// })(); 
-
-

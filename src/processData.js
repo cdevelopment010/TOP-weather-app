@@ -7,9 +7,8 @@ export default function processData(data) {
     const weather = data.list; 
 
     const weatherNow = weather[0]; 
-
-    const mainDisplay = displayMainWeather(weatherNow);
-    const futureDisplay = futureWeatherDisplay(weather, 0, 2);
+    const mainDisplay = displayMainWeather(weatherNow, data.city.name);
+    const futureDisplay = futureWeatherDisplay(weather, 0, 5);
     console.log(futureDisplay);
     // futureDisplay.textContent = 'hellow';
 
