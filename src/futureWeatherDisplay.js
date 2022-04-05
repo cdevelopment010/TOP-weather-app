@@ -4,7 +4,6 @@ export default function futureWeatherDisplay(obj, startId, endId) {
 
     obj.forEach( (forecast, index) => {
         if (index >= startId && index <= endId) {
-            console.log(forecast); 
             const container = document.createElement('div'); 
             const img = document.createElement('img'); 
             const dateTime = document.createElement('p');

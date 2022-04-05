@@ -70,6 +70,24 @@ a {
     font-size: 1.5em;
 }
 
+h1 {
+    text-align: center;
+}
+
+form {
+    #search-icon {
+        background: none;
+        border: none;
+        outline: none;
+        color: $card-bg; 
+        cursor: pointer;
+
+        &:hover {
+            color:$text-col;
+        }
+    }
+}
+
 
 .main-container {
     display: grid;
@@ -78,7 +96,7 @@ a {
 }
 
 
-#main-weather, #future-weather {
+#main-weather, #future-weather, #error-card {
     padding: 25px; 
     display: grid; 
     align-items: center;
@@ -170,6 +188,16 @@ a {
     }
 }
 
+// 404 box
+#error-card {
+    align-items: center;
+    justify-items: center;
+
+    #error-title {
+        text-align: center;
+    }
+}
+
 /* The switch - the box around the slider */
 .switch {
     position: relative;
@@ -242,9 +270,10 @@ a {
 
   @media screen and (min-width: 48em ){
 
-    #main-weather, #future-weather{
-        order-radius: 100px;
+    #main-weather, #future-weather {
+        border-radius: 100px;
     }
+    
     #main-weather {
         grid-template-columns: 0.6fr .2fr 0.2fr;
         grid-template-areas: "temp  dateTime ."

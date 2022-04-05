@@ -2,7 +2,6 @@ import toggle from "./toggle";
 
 export default function displayMainWeather(obj, location) {
 
-    console.log(obj);
     const container = document.createElement('div'); 
     const loc = document.createElement('p'); 
     const img = document.createElement('img'); 
